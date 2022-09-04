@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+    </head>
+    <body>
+        <a href="http://127.0.0.1:8000/test_url_result">absolut url</a>
+        <a href="/test_url_result">with '/' url</a>
+        <a href="test_url_result">without '/' url</a>
+
+        <br>
+
+        <a href="{% url 'tr' '100' %}"> url reverse parsing</a>
+    </body>
+</html>

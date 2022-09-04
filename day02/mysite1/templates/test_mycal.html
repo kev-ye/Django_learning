@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>mycal</title>
+    </head>
+    <body>
+        <form method="POST" action='/mycal'>
+            <input type="text" name="x" value="{{ x }}">
+            <select name="op">
+                <option value="add" {% if op == 'add' %}selected{% endif %}>+</option>
+                <option value="sub" {% if op == 'sub' %}selected{% endif %}>-</option>
+                <option value="mul" {% if op == 'mul' %}selected{% endif %}>*</option>
+                <option value="div" {% if op == 'div' %}selected{% endif %}>/</option>
+            </select>
+    
+            <input type="text" name="y" value="{{ y }}"> = <span>{{ result }}</span>
+            <div>
+                <input type="submit" value="cal">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test if for</title>
+    </head>
+    <body>
+        {% if x > 10 %}
+            x > 10
+        {% else %}
+            x <= 10
+        {% endif %}
+
+        <br>
+
+        {% for name in lst %}
+            {% if forloop.first %} &&&&& {% endif %}
+            <p>{{ forloop.counter }} {{ name }}</p>
+            {% if forloop.last %} ===== {% endif %}
+        {% empty %}
+            No data
+        {% endfor %}
+    </body>
+</html>

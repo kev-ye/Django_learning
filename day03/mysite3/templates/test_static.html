@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test static</title>
+    </head>
+    <body>
+        <img src="http://127.0.0.1:8000/static/image/django.png" width="200px" height="200px" />
+        <img src="/static/image/django.png" width="200px" height="200px" />
+        {% load static %}
+        <img src="{% static 'image/django.png' %}" width="200px" height="200px" />
+    </body>
+</html>

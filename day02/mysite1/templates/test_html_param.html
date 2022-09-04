@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test param</title>
+    </head>
+    <body>
+        <h3>int: {{ int | add:'2' }}</h3>
+        <h3>str: {{ str | upper }}</h3>
+        <h3>lst: {{ lst }}</h3>
+        <h3>lst[0]: {{ lst.0 }}</h3>
+        <h3>dict: {{ dict }}</h3>
+        <h3>dict['a']: {{ dict.a }}</h3>
+        <h3>func: {{ func }}</h3>
+        <h3>class: {{ class_obj.say }}</h3>
+        <!-- <h3>script: {{ script | safe }}</h3> -->
+    </body>
+</html>

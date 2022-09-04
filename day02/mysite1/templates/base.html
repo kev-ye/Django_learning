@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% block mytitle %}
+        <title>base</title>
+        {% endblock %}
+    </head>
+    <body>
+
+        <!-- Dynamic values cannot be inherited -->
+        {{ lst }}
+
+        <a href="/music_index">music</a>
+        <a href="/sport_index">sport</a>
+        <br>
+
+        {% block info %}
+            here is base
+        {% endblock %}
+
+        <br>
+
+        <h3>any question?</h3>
+        
+    </body>
+</html>
